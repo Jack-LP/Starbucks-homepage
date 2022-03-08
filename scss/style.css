@@ -1,0 +1,251 @@
+@import url(https://fonts.googleapis.com/css?family=Mukta:200,300,regular,500,600,700,800);
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+nav {
+  width: 100%;
+}
+
+nav ul {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  list-style: none;
+  padding: 10px 0;
+  width: 100%;
+}
+
+nav ul li {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: 2px;
+}
+
+nav ul li img {
+  width: auto;
+  height: 65px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+nav ul li a:visited {
+  color: inherit;
+}
+
+nav ul li a:hover {
+  color: #00653e;
+}
+
+nav ul .extend-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+nav ul .extend-right a:hover {
+  color: #6c6c6c;
+}
+
+nav ul .extend-right li {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+nav ul .extend-right li:first-child i {
+  margin-right: 5px;
+}
+
+nav ul .extend-right button {
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: .9rem;
+  padding: 4px 17px;
+  border-radius: 50px;
+  border: 1px solid black;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+nav ul .extend-right .join-btn {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+nav ul .extend-right .join-btn:hover {
+  background-color: #3e3e3e;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.6fr;
+      grid-template-columns: 1fr 1.6fr;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+      grid-template-areas: "aside main";
+}
+
+main .aside-content {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: aside;
+  background-color: pink;
+  height: 100vh;
+}
+
+main .aside-content img {
+  width: 100%;
+  height: 100%;
+}
+
+main .main-content {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: main;
+  height: 100vh;
+}
+
+main .main-content .section-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+main .main-content .section-one img {
+  width: 100%;
+}
+
+main .main-content .section-one .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+main .main-content .section-one .container h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+main .main-content .section-one .container p {
+  color: #6c6c6c;
+  line-height: 20px;
+}
+
+main .main-content .section-one .container p:last-of-type {
+  padding-top: 40px;
+  color: black;
+  text-transform: uppercase;
+}
+
+main .main-content .section-one .container button {
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: .9rem;
+  padding: 4px 17px;
+  border-radius: 50px;
+  border: 1px solid #00653e;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+  width: 110px;
+  color: #00653e;
+  background-color: transparent;
+  border-color: #00653e;
+}
+
+main .main-content .section-one .container button:hover {
+  background-color: #d4e9e2;
+}
+
+main .main-content .section-two .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  padding: 20px 0;
+}
+
+main .main-content .section-two .container img {
+  width: 100%;
+  height: 100%;
+}
+
+main .main-content .section-two .container .side-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 70px;
+  gap: 15px;
+}
+
+main .main-content .section-two .container .side-text p {
+  color: #6c6c6c;
+}
+
+main .main-content .section-two .container .side-text button {
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: .9rem;
+  padding: 4px 17px;
+  border-radius: 50px;
+  border: 1px solid #00653e;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+  width: 110px;
+  color: #00653e;
+  background-color: transparent;
+  border-color: #00653e;
+}
+
+main .main-content .section-two .container .side-text button:hover {
+  background-color: #d4e9e2;
+}
+/*# sourceMappingURL=style.css.map */
