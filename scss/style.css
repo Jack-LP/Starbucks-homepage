@@ -12,6 +12,10 @@
   margin: 0 auto;
 }
 
+body {
+  background-color: #f7f7f7;
+}
+
 nav {
   width: 100%;
 }
@@ -120,8 +124,6 @@ main .aside-content {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: aside;
-  background-color: pink;
-  height: 100vh;
 }
 
 main .aside-content img {
@@ -202,8 +204,8 @@ main .main-content .section-one .container button:hover {
 main .main-content .section-two .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: 1fr 1.02fr;
+      grid-template-columns: 1fr 1.02fr;
   padding: 20px 0;
 }
 
@@ -247,5 +249,146 @@ main .main-content .section-two .container .side-text button {
 
 main .main-content .section-two .container .side-text button:hover {
   background-color: #d4e9e2;
+}
+
+main .main-content .section-three {
+  margin-top: 50px;
+}
+
+main .main-content .section-three .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  row-gap: 30px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+main .main-content .section-three .container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  --webkit-box-shadow: 0px 0px 7px 5px rgba(0,0,0,0.08);
+  -webkit-box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.08);
+}
+
+main .main-content .section-three .container .card img {
+  height: auto;
+  width: 100%;
+}
+
+main .main-content .section-three .container .card .card-container {
+  width: 90%;
+  margin: 10px auto;
+}
+
+main .main-content .section-three .container .card .card-container h2 {
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+main .main-content .section-three .container .card .card-container p {
+  color: #6c6c6c;
+  font-size: 1rem;
+}
+
+main .main-content .section-three .container .card .card-container button {
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: .9rem;
+  padding: 4px 17px;
+  border-radius: 50px;
+  border: 1px solid #00653e;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+  width: 110px;
+  color: #00653e;
+  background-color: transparent;
+  border-color: #00653e;
+  margin-top: 15px;
+  width: 160px;
+}
+
+main .main-content .section-three .container .card .card-container button:hover {
+  background-color: #d4e9e2;
+}
+
+main .main-content footer {
+  background-color: white;
+  margin-top: 30px;
+}
+
+main .main-content footer .accordion-menu .container .accordion {
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  padding: 20px 0;
+  width: 100%;
+  font-size: 1.6rem;
+  text-align: left;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+main .main-content footer .accordion-menu .container .panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
+main .main-content footer .accordion-menu .container .panel:last-of-type {
+  border-bottom: 2px solid #6c6c6c;
+}
+
+main .main-content footer .accordion-menu .container .panel ul {
+  list-style: none;
+}
+
+main .main-content footer .accordion-menu .container .panel ul li {
+  margin-bottom: 20px;
+  color: #6c6c6c;
+}
+
+main .main-content footer .accordion-menu .container .panel ul li a {
+  text-decoration: none;
+}
+
+main .main-content footer .accordion-menu .container .panel ul li a:visited {
+  color: inherit;
+}
+
+main .main-content footer .container {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .main-content footer .container .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+main .main-content footer .container .socials i {
+  font-size: 2.5rem;
+  color: #2d2d2d;
 }
 /*# sourceMappingURL=style.css.map */
