@@ -113,8 +113,9 @@ nav ul .extend-right .join-btn:hover {
 main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1.6fr;
-      grid-template-columns: 1fr 1.6fr;
+  height: 306vh;
+  -ms-grid-columns: 1fr 1.66fr;
+      grid-template-columns: 1fr 1.66fr;
   -ms-grid-rows: 100%;
       grid-template-rows: 100%;
       grid-template-areas: "aside main";
@@ -124,11 +125,14 @@ main .aside-content {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: aside;
-}
-
-main .aside-content img {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.37437)), to(rgba(255, 255, 255, 0))), url(../img/SRC01.png);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.37437) 0%, rgba(255, 255, 255, 0) 100%), url(../img/SRC01.png);
+  background-size: 738px;
+  height: 100vh;
   width: 100%;
-  height: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
 }
 
 main .main-content {
@@ -373,22 +377,58 @@ main .main-content footer .accordion-menu .container .panel ul li a:visited {
   color: inherit;
 }
 
-main .main-content footer .container {
+main .main-content footer .socials-container {
   padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  margin: 0 auto;
+  width: 85%;
 }
 
-main .main-content footer .container .socials {
+main .main-content footer .socials-container .socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
+  padding: 20px 0;
 }
 
-main .main-content footer .container .socials i {
+main .main-content footer .socials-container .socials i {
   font-size: 2.5rem;
   color: #2d2d2d;
+}
+
+main .main-content footer .socials-container .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 165px;
+}
+
+main .main-content footer .socials-container .footer-links ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+main .main-content footer .socials-container .footer-links ul li a {
+  text-decoration: none;
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */
